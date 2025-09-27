@@ -1,0 +1,117 @@
+%! Author = deandidion
+%! Date = 27.09.25
+
+% Preamble
+\documentclass[a4paper,12pt]{article}
+
+% ===========================
+% Packages
+% ===========================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{helvet} % for Arial-like font
+\renewcommand{\familydefault}{\sfdefault} % use sans-serif (closest to Arial)
+\usepackage{hyperref}
+\usepackage{lipsum} % for dummy text
+
+% ===========================
+% Formatting according to IU specs
+% ===========================
+\geometry{a4paper, top=2cm, bottom=2cm, left=2cm, right=2cm}
+\setstretch{1.5} % line spacing
+
+% Font sizes: 11pt general, 12pt for headings
+\renewcommand\normalsize{\fontsize{11}{13.6}\selectfont}
+\renewcommand\footnotesize{\fontsize{10}{12}\selectfont}
+
+% Paragraph spacing (6pt after paragraph)
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+% Chapter numbering: max 3 levels
+\setcounter{secnumdepth}{3}
+
+% Headings style
+\titleformat{\section}{\fontsize{12}{14}\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\fontsize{12}{14}\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\fontsize{12}{14}\itshape}{\thesubsubsection}{1em}{}
+
+% ===========================
+% Document
+% ===========================
+\begin{document}
+
+\title{Exposé zur Master's Qualification Paper \\[0.5em]
+\Large AI-driven Impact Measurement and Management: \\
+Developing and Evaluating a Framework using Inluma as a Case Study}
+\author{Dean Didion\\ Matriculation Number: IU14148408
+
+
+}
+\date{\today}
+\maketitle
+
+\section{Introduction and Motivation}\label{sec:introduction-and-motivation}
+Measuring and managing social and environmental impact is a critical challenge for organizations operating in the public value and social innovation space.
+Existing approaches to Impact Measurement and Management (IMM) often suffer from fragmentation, lack of scalability, and limited data integration.
+
+Advances in Artificial Intelligence (AI), particularly in Natural Language Processing (NLP) and Machine Learning (ML), open new opportunities for automating and improving the reliability of IMM. As CTO of the Public Value Hub, Leipzig and responsible for the development of the \textit{Inluma} IMM tool, this work explores how AI can support IMM in practice.
+
+\section{Problem Statement and Research Gap}\label{sec:problem-statement-and-research-gap}
+While frameworks such as SROI, IRIS+, or SDG-based metrics provide standards for evaluating impact, they rely heavily on Human In The Loop (HITL), qualitative data collection and interpretation.
+This creates challenges of comparability, transparency, and efficiency.
+
+The research gap lies in the limited integration of AI methods in IMM processes.
+There is a need for validated frameworks that combine AI-driven analytics with established IMM practices to support decision-making in social enterprises.
+
+\section{Research Questions and Objectives}\label{sec:research-questions-and-objectives}
+The central research question is:
+\begin{quote}
+\textit{How can Artificial Intelligence support and enhance Impact Measurement and Management in social enterprises through an applied framework?}
+\end{quote}
+
+Sub-questions include:
+\begin{itemize}
+    \item Which AI methods are most suitable for evaluating qualitative and quantitative impact data?
+    \item How can an AI-driven IMM framework improve efficiency, comparability, and transparency in impact assessment?
+    \item What are the practical implications of applying such a framework in the case of Inluma?
+\end{itemize}
+
+\section{Methodology}\label{sec:methodology}
+The research will be conducted in three phases:
+\begin{enumerate}
+    \item \textbf{Literature Review}: Analysis of academic and practical work on IMM frameworks and AI applications.
+    \item \textbf{Case Study}: Application of IMM concepts to the development of Inluma.
+    \item \textbf{Prototype and Evaluation}: Design of a proof-of-concept AI-supported IMM tool and assessment through user feedback and benchmarking.
+\end{enumerate}
+
+\section{Expected Contribution}\label{sec:expected-contribution}
+This work aims to:
+\begin{itemize}
+    \item Contribute to academic literature by bridging applied AI research with IMM practices.
+    \item Provide a validated framework for AI-driven IMM applicable to social enterprises.
+    \item Deliver practical insights for the further development of \textit{Inluma}.
+\end{itemize}
+
+\section{Preliminary Outline}\label{sec:preliminary-outline}
+\begin{enumerate}
+    \item Introduction and Motivation
+    \item Theoretical Background: IMM frameworks and AI methods
+    \item Methodology
+    \item Case Study: Inluma
+    \item Results and Discussion
+    \item Conclusion and Outlook
+\end{enumerate}
+
+\section*{References}
+\begin{itemize}
+    \item Ebrahim, A., \& Rangan, V. K. (2014). What impact? A framework for measuring the scale and scope of social performance. \textit{California Management Review}.
+    \item Nicholls, A., et al. (2015). Measuring impact in impact investing: Learning from practice. \textit{Journal of Social Entrepreneurship}.
+    \item OECD (2019). \textit{Impact Measurement Approaches}.
+\end{itemize}
+
+\end{document}
